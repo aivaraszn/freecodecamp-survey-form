@@ -1,13 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey Form</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="background">
+        <div class="form_container">
+          <div>
+            <h1 id="title"></h1>
+            <p id="description"></p>
+          </div>
+          <div class="form_box">
+            <form id="survey-form" action="">
+              <label id="name-label" for="name" required>Name</label>
+              <input id="name" type="text" placeholder="Enter you name" />
 
-</body>
+              <label id="email-label" for="email" required>Email</label>
+              <input id="email" type="email" placeholder="Enter your Email" />
+
+              <label id="number-label" for="number"
+                >Age<span>(optional)</span></label
+              >
+              <input
+                type="number"
+                name="age"
+                id="number"
+                min="10"
+                max="80"
+                placeholder="Age"
+              />
+
+              <label for="dropdown"
+                >Which option best describes your current role?</label
+              >
+              <select name="" id="dropdown">
+                <option value="">Select current role</option>
+                <option value="student">Student</option>
+                <option value="full_time_job">Full Time Job</option>
+                <option value="full_time_learner">Full Time Learner</option>
+                <option value="prefer_not_to_say">Prefer not to say</option>
+                <option value="other">Other</option>
+              </select>
+
+              <label for="radio"
+                >Would you recommend freeCodeCamp to a friend?</label
+              >
+              <div class="radio_box">
+                <label for="definitely"
+                  >Definitely<input value="definitely" type="radio"
+                /></label>
+                <label for="maybe"
+                  >Maybe<input value="maybe" type="radio"
+                /></label>
+                <label for="not_sure"
+                  >Not sure<input value="not_sure" type="radio"
+                /></label>
+              </div>
+
+              <label for="dropdown_2"
+                >What is your favorite feature of freeCodeCamp?</label
+              >
+              <select name="" id="dropdown_2">
+                <option value="">Select an option</option>
+                <option value="chalangers">Chalangers</option>
+                <option value="projects">Projects</option>
+                <option value="comunity">Comunity</option>
+                <option value="open_source">Open Source</option>
+              </select>
+
+              <label for="check_box"
+                >What would you like to see improved?
+                <span>(Check all that apply)</span></label
+              >
+              <div class="check_box">
+                <label for="front_end">
+                  <input
+                    type="checkbox"
+                    name="front_end"
+                    id="front_end"
+                  />Fron-end Projects
+                </label>
+                <label for="back_end">
+                  <input
+                    type="checkbox"
+                    name="back_end"
+                    id="back_end"
+                  />Back-end Projects
+                </label>
+                <label for="data">
+                  <input type="checkbox" name="data" id="data" />Data
+                  Visualization
+                </label>
+                <label for="challenges">
+                  <input
+                    type="checkbox"
+                    name="challenges"
+                    id="challenges"
+                  />Challenges
+                </label>
+                <label for="open">
+                  <input type="checkbox" name="open" id="open" />Open Source
+                  Community
+                </label>
+                <label for="help"
+                  ><input type="checkbox" name="help" id="help" />Gitter help
+                  rooms</label
+                >
+                <label for="videos"
+                  ><input
+                    type="checkbox"
+                    name="videos"
+                    id="videos"
+                  />Videos</label
+                >
+                <label for="meetups"
+                  ><input type="checkbox" name="meetups" id="meetups" />City
+                  Meetups</label
+                >
+                <label for="wiki"
+                  ><input type="checkbox" name="wiki" id="wiki" />wiki</label
+                >
+                <label for="forum"
+                  ><input type="checkbox" name="forum" id="forum" />Forum</label
+                >
+                <label for="courses"
+                  ><input
+                    type="checkbox"
+                    name="courses"
+                    id="courses"
+                  />Additional Courses</label
+                >
+              </div>
+
+              <label for="textarea">Any comments or suggestions?</label>
+              <textarea name="textarea" id="textarea" placeholder="Enter your comment here ..."></textarea>
+
+              <button type="submit" id="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
